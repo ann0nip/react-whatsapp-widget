@@ -1,0 +1,21 @@
+.root {
+  align-items: center;
+  align-self: flex-end;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px;
+  color: rgb(79, 206, 93);
+  cursor: pointer;
+  display: flex;
+  font-size: 2em;
+  height: 64px;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  outline: transparent;
+  user-select: none;
+  width: 64px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}

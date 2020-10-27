@@ -1,6 +1,20 @@
 import React from 'react'
-import styles from './styles.module.css'
+import App from './components/App'
+import WhatsAppButton from './components/WhatsAppButton'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export default function WhatsAppWidget() {
+  const containerStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    position: 'fixed',
+    bottom: 15,
+    right: 25
+  }
+
+  return (
+    <div style={containerStyles}>
+      <App />
+      <WhatsAppButton />
+    </div>
+  )
 }
