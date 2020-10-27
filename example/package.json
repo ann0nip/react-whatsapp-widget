@@ -1,5 +1,5 @@
 {
-  "name": "@ann0nip/react-whatsapp-widget-example",
+  "name": "react-whatsapp-widget-example",
   "homepage": ".",
   "version": "0.0.0",
   "private": true,
@@ -13,7 +13,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
-    "@ann0nip/react-whatsapp-widget": "link:.."
+    "react-whatsapp-widget": "link:.."
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

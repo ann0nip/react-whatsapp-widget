@@ -1,3 +1,14 @@
 .root {
-  background-color: teal;
+  width: 360px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: opacity 0.3s ease 0s, margin 0.3s ease 0s, visibility 0.3s ease 0s;
+  background-color: rgb(255, 255, 255);
+  transform: translate3d(0px, 0px, 0px);
+  touch-action: auto;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }

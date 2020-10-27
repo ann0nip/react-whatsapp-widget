@@ -1,10 +1,10 @@
 {
-  "name": "@ann0nip/react-whatsapp-widget",
+  "name": "react-whatsapp-widget",
   "version": "1.0.0",
   "description": "WhatsApp chat widget for your website",
   "author": "ann0nip",
   "license": "MIT",
-  "repository": "ann0nip/@ann0nip/react-whatsapp-widget",
+  "repository": "ann0nip/react-whatsapp-widget",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
