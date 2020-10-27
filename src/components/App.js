@@ -14,7 +14,7 @@ export default function App({
 }) {
   return (
     <div className={styles.root}>
-      <Header />
+      <Header company_name={company_name} txt_reply_time={txt_reply_time} />
       <ChatSection />
       <SendButton />
     </div>
