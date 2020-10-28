@@ -51,6 +51,7 @@
     "dist"
   ],
   "dependencies": {
+    "dayjs": "^1.9.4",
     "react-icons": "^3.11.0"
   }
 }
