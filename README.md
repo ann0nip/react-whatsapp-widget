@@ -8,7 +8,7 @@
 
 ## What is this?
 
-This is a very simple floating WhatsApp button widget for your website.
+This is a very simple floating WhatsApp button widget. In the current situation with the pandemic 2020 events, most of the small businesses have to move to online presence. A wey to short the communication with your customers is using a widget like this.
 
 It adds a floating-like button to your site that calls the WhatsApp Chat API.
 
