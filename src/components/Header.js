@@ -3,10 +3,10 @@ import styles from './Header.module.css'
 import { BiSupport } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 
-export default function Header({ company_name, txt_reply_time }) {
+export default function Header({ company_name, txt_reply_time, triggerChat }) {
   return (
     <div className={styles.root}>
-      <span className={styles.close_btn}>
+      <span className={styles.close_btn} onClick={triggerChat}>
         <AiOutlineClose />
       </span>
       <div className={styles.logo}>

@@ -5,17 +5,12 @@ import Header from './Header'
 import ChatSection from './ChatSection'
 import SendButton from './SendButton'
 
-export default function App({
-  company_name = 'Ann0nit',
-  txt_reply_time = 'Typically replies within a day',
-  message = `Hello! 👋🏼 \n\nWhat can we do for you?`,
-  txt_button = 'Send'
-}) {
+export default function App(props) {
   return (
-    <div className={styles.root}>
-      <Header company_name={company_name} txt_reply_time={txt_reply_time} />
-      <ChatSection company_name={company_name} message={message} />
-      <SendButton txt_button={txt_button} />
+    <div className={styles.root} style={{ opacity: props.isOpen ? 1 : 0 }}>
+      <Header {...props} />
+      <ChatSection {...props} />
+      <SendButton {...props} />
     </div>
   )
 }
