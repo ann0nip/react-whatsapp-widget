@@ -11,10 +11,10 @@ const containerStyles = {
 }
 
 export default function WhatsAppWidget({
-  txt_reply_time = 'Typically replies within a day',
+  textReplyTime = 'Typically replies within a day',
   message = `Hello! 👋🏼 \n\nWhat can we do for you?`,
-  company_name = 'Support',
-  txt_button = 'Send',
+  companyName = 'Support',
+  sendButton = 'Send',
   phoneNumber
 }) {
   const [open, setOpen] = useState(false)
@@ -26,11 +26,11 @@ export default function WhatsAppWidget({
   return (
     <div style={containerStyles}>
       <App
-        txt_reply_time={txt_reply_time}
-        company_name={company_name}
+        textReplyTime={textReplyTime}
+        companyName={companyName}
         phoneNumber={phoneNumber}
         triggerChat={triggerChat}
-        txt_button={txt_button}
+        sendButton={sendButton}
         message={message}
         isOpen={open}
       />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './SendButton.module.css'
 
-export default function SendButton({ txt_button, phoneNumber }) {
+export default function SendButton({ sendButton, phoneNumber }) {
   const [message, setMessage] = useState('')
 
   const handleSend = () => {
@@ -26,7 +26,7 @@ export default function SendButton({ txt_button, phoneNumber }) {
         value={message}
       />
       <button className={styles.button} onClick={handleSend}>
-        {txt_button}
+        {sendButton}
       </button>
     </div>
   )
