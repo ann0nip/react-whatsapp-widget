@@ -13,7 +13,7 @@ export default function Header({ companyName, textReplyTime, handleOpen }) {
         <BiSupport />
       </div>
       <div className={styles.texts}>
-        <h1 className={styles.texts_h1}>{companyName}</h1>
+        <span className={styles.texts_h1}>{companyName}</span>
         <span className={styles.texts_span}>{textReplyTime}</span>
       </div>
     </div>

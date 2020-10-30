@@ -31,12 +31,16 @@
   color: rgb(255, 255, 255);
   margin-left: 16px;
   margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .texts_h1 {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  display: block;
 }
 
 .texts_span {
