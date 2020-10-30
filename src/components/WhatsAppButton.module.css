@@ -19,3 +19,14 @@
   -webkit-box-align: center;
   -webkit-box-pack: center;
 }
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .root {
+    margin-right: 0;
+  }
+}
