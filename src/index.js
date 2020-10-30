@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import App from './components/App'
 import WhatsAppButton from './components/WhatsAppButton'
+import { WidgetContextProvider } from './context/widgetContext'
 
 const containerStyles = {
   display: 'flex',
@@ -17,24 +18,18 @@ export default function WhatsAppWidget({
   sendButton = 'Send',
   phoneNumber
 }) {
-  const [open, setOpen] = useState(false)
-
-  const triggerChat = () => {
-    setOpen((prevState) => setOpen(!prevState))
-  }
-
   return (
     <div style={containerStyles}>
-      <App
-        textReplyTime={textReplyTime}
-        companyName={companyName}
-        phoneNumber={phoneNumber}
-        triggerChat={triggerChat}
-        sendButton={sendButton}
-        message={message}
-        isOpen={open}
-      />
-      <WhatsAppButton triggerChat={triggerChat} />
+      <WidgetContextProvider>
+        <App
+          textReplyTime={textReplyTime}
+          companyName={companyName}
+          phoneNumber={phoneNumber}
+          sendButton={sendButton}
+          message={message}
+        />
+        <WhatsAppButton />
+      </WidgetContextProvider>
     </div>
   )
 }

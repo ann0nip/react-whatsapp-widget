@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from './Header.module.css'
 import { BiSupport } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
+import styles from './Header.module.css'
 
-export default function Header({ companyName, textReplyTime, triggerChat }) {
+export default function Header({ companyName, textReplyTime, handleOpen }) {
   return (
     <div className={styles.root}>
-      <span className={styles.close_btn} onClick={triggerChat}>
+      <span className={styles.close_btn} onClick={handleOpen}>
         <AiOutlineClose />
       </span>
       <div className={styles.logo}>
