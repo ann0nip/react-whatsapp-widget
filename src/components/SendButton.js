@@ -6,7 +6,7 @@ export default function SendButton({ sendButton, phoneNumber }) {
 
   const handleSend = () => {
     if (!phoneNumber) {
-      alert('Invalid Phone Number')
+      window.alert('Invalid Phone Number')
       return false
     }
     window.open(`https://wa.me/${phoneNumber}?text=${message}`)
