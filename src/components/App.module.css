@@ -1,7 +1,6 @@
 .root {
   width: 360px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
-  display: flex;
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;

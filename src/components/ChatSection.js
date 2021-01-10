@@ -1,5 +1,4 @@
 import React from 'react'
-import dayjs from 'dayjs'
 import styles from './ChatSection.module.css'
 
 export default function ChatSection({ companyName, message }) {
