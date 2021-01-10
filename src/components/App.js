@@ -10,7 +10,7 @@ export default function App(props) {
   const { isOpen, handleOpen } = useContext(WidgetContext)
 
   return (
-    <div className={styles.root} style={{ opacity: isOpen ? 1 : 0 }}>
+    <div className={`${styles.root} ${isOpen ? styles.open : styles.close}`}>
       <Header handleOpen={handleOpen} {...props} />
       <ChatSection {...props} />
       <SendButton {...props} />

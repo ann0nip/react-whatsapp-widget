@@ -5,13 +5,28 @@
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  transition: opacity 0.3s ease 0s, margin 0.3s ease 0s, visibility 0.3s ease 0s;
   background-color: rgb(255, 255, 255);
   transform: translate3d(0px, 0px, 0px);
   touch-action: auto;
   margin-right: 20px;
   margin-bottom: 10px;
-  opacity: 0;
+  display: none;
+}
+.open {
+  display: flex;
+  animation: customTransition 250ms ease-in-out both;
+}
+.close {
+  display: none;
+}
+
+@keyframes customTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*
