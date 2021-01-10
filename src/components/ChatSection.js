@@ -3,7 +3,7 @@ import dayjs from 'dayjs'
 import styles from './ChatSection.module.css'
 
 export default function ChatSection({ companyName, message }) {
-  const time = dayjs().format('HH:mm')
+  const time = new Date().toTimeString().split(`:`).slice(0, 2).join(`:`)
 
   return (
     <div className={styles.root}>
