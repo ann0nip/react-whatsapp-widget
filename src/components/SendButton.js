@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './SendButton.module.css'
 
-export default function SendButton({ sendButton, phoneNumber }) {
+export default function SendButton({ sendButton, phoneNumber, placeholder }) {
   const [message, setMessage] = useState('')
 
   const handleSend = () => {
@@ -20,7 +20,7 @@ export default function SendButton({ sendButton, phoneNumber }) {
   return (
     <div className={styles.root}>
       <input
-        placeholder='Type a message'
+        placeholder={placeholder}
         className={styles.input}
         onChange={handleChange}
         value={message}
