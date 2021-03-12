@@ -18,6 +18,9 @@
   width: 64px;
   -webkit-box-align: center;
   -webkit-box-pack: center;
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
 }
 
 /*
