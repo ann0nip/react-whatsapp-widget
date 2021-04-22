@@ -10,17 +10,14 @@
   font-size: 2em;
   height: 64px;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
   outline: transparent;
   user-select: none;
   width: 64px;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  position: absolute;
-  bottom: 15px;
-  right: 30px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
 }
 
 /*
@@ -28,8 +25,10 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .root {
-    margin-right: 0;
+    width: 48px;
+    height: 48px;
+    font-size: 1.5em;
   }
 }

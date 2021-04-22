@@ -7,12 +7,10 @@
   background-color: rgb(255, 255, 255);
   transform: translate3d(0px, 0px, 0px);
   touch-action: auto;
-  margin-bottom: 15px;
   display: none;
-  position: absolute;
-  margin: 20px;
-  bottom: 99px;
-  right: 30px;
+  position: fixed;
+  bottom: 110px;
+  right: 25px;
 }
 .open {
   display: flex;
@@ -36,8 +34,9 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .root {
-    right: 0;
+    bottom: 85px;
+    width: 270px;
   }
 }
