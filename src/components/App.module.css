@@ -10,9 +10,11 @@
   margin-bottom: 15px;
   display: none;
   position: absolute;
-  margin: 20px;
-  bottom: 99px;
-  right: 30px;
+  margin: 10px;
+  bottom: 80px;
+  right: 15px;
+  text-align: right;
+  direction: rtl;
 }
 .open {
   display: flex;
