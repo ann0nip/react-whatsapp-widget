@@ -1,10 +1,10 @@
 .root {
   align-items: center;
   align-self: flex-end;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(79, 206, 93);
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 12px;
-  color: rgb(79, 206, 93);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   display: flex;
   font-size: 2em;
