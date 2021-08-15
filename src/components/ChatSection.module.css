@@ -16,7 +16,7 @@
   transform-origin: center top;
   box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 0.5px;
   margin-top: 4px;
-  max-width: calc(100% - 120px);
+  max-width: calc(100% - 100px);
 }
 
 .message_title {
