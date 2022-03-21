@@ -2,7 +2,6 @@ import React from 'react'
 import App from './components/App'
 import WhatsAppButton from './components/WhatsAppButton'
 import { WidgetContextProvider } from './context/widgetContext'
-import styles from './index.module.css'
 
 export default function WhatsAppWidget({
   textReplyTime = 'Typically replies within a day',
@@ -13,7 +12,7 @@ export default function WhatsAppWidget({
   phoneNumber
 }) {
   return (
-    <div className={styles.root}>
+    <div>
       <WidgetContextProvider>
         <App
           textReplyTime={textReplyTime}
