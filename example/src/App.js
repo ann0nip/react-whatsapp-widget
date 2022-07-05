@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { ReactComponent as CompanyIcon } from './assets/crown.svg';
 
-import { WhatsAppWidget } from 'react-whatsapp-widget'
-import 'react-whatsapp-widget/dist/index.css'
+import { WhatsAppWidget } from 'react-whatsapp-widget';
+import 'react-whatsapp-widget/dist/index.css';
 
 const App = () => {
-  return <WhatsAppWidget />
-}
+    return (
+        <WhatsAppWidget
+            CompanyIcon={CompanyIcon}
+            companyName="Ann0nIT"
+            message={`Hello! 👋🏼 \n\nWhat can we do for you?`}
+            phoneNumber="3704568045"
+        />
+    );
+};
 
-export default App
+export default App;

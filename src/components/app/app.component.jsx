@@ -1,14 +1,29 @@
-import React, { useContext, useEffect } from 'react'
-import { ChatContext } from '../../contexts/chat.context'
-import WaButton from '../wa-button/wa-button.component'
+import React, { useContext, Fragment } from 'react';
 
-const App = () => {
-  const { isChatOpen } = useContext(ChatContext)
+import { ChatContext } from '../../contexts/chat.context';
+import ChatBox from '../chat-box/chat-box.component';
+import Header from '../header/header.component';
+import SendButton from '../send-button/send-button';
+import WaButton from '../wa-button/wa-button.component';
+import styles from './app.module.css';
 
-  useEffect(() => {
-    console.log(isChatOpen)
-  }, [isChatOpen])
-  return <WaButton />
-}
+const App = (props) => {
+    const { isChatOpen } = useContext(ChatContext);
 
-export default App
+    return (
+        <Fragment>
+            <div
+                className={`${styles.root} ${
+                    isChatOpen ? styles.open : styles.close
+                }`}
+            >
+                <Header {...props} />
+                <ChatBox {...props} />
+                <SendButton {...props} />
+            </div>
+            <WaButton />
+        </Fragment>
+    );
+};
+
+export default App;

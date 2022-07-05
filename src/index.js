@@ -1,13 +1,12 @@
-import React, { useContext } from 'react'
-import App from './components/app/app.component'
+import React from 'react';
+import App from './components/app/app.component';
 
-import { ChatProvider } from './contexts/chat.context'
-//import styles from './styles.module.css'
+import { ChatProvider } from './contexts/chat.context';
 
-export const WhatsAppWidget = () => {
-  return (
-    <ChatProvider>
-      <App />
-    </ChatProvider>
-  )
-}
+export const WhatsAppWidget = (props) => {
+    return (
+        <ChatProvider>
+            <App {...props} />
+        </ChatProvider>
+    );
+};
