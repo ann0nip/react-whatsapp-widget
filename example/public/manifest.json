@@ -1,6 +1,6 @@
 {
-  "short_name": "@ann0nip/react-whatsapp-widget",
-  "name": "@ann0nip/react-whatsapp-widget",
+  "short_name": "react-whatsapp-widget",
+  "name": "react-whatsapp-widget",
   "icons": [
     {
       "src": "favicon.ico",
