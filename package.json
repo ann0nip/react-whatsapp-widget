@@ -1,7 +1,7 @@
 {
   "name": "react-whatsapp-widget",
-  "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "version": "2.0.0",
+  "description": "WhatsApp chat widget for your website",
   "author": "ann0nip",
   "license": "MIT",
   "repository": "ann0nip/react-whatsapp-widget",
@@ -52,5 +52,10 @@
   ],
   "dependencies": {
     "react-icons": "^4.4.0"
-  }
+  },
+  "keywords": [
+    "whatsapp",
+    "widget",
+    "react-module"
+  ]
 }
