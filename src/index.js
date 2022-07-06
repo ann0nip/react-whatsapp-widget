@@ -1,29 +1,12 @@
-import React from 'react'
-import App from './components/App'
-import WhatsAppButton from './components/WhatsAppButton'
-import { WidgetContextProvider } from './context/widgetContext'
+import React from 'react';
+import App from './components/app/app.component';
 
-export default function WhatsAppWidget({
-  textReplyTime = 'Typically replies within a day',
-  message = `Hello! 👋🏼 \n\nWhat can we do for you?`,
-  companyName = 'Support',
-  sendButton = 'Send',
-  placeholder = 'Type a message',
-  phoneNumber
-}) {
-  return (
-    <div>
-      <WidgetContextProvider>
-        <App
-          textReplyTime={textReplyTime}
-          companyName={companyName}
-          phoneNumber={phoneNumber}
-          sendButton={sendButton}
-          placeholder={placeholder}
-          message={message}
-        />
-        <WhatsAppButton />
-      </WidgetContextProvider>
-    </div>
-  )
-}
+import { ChatProvider } from './contexts/chat.context';
+
+export const WhatsAppWidget = (props) => {
+    return (
+        <ChatProvider>
+            <App {...props} />
+        </ChatProvider>
+    );
+};
