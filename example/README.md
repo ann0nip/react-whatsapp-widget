@@ -1,5 +1,5 @@
 This example was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It is linked to the @ann0nip/react-whatsapp-widget package in the parent directory for development purposes.
+It is linked to the react-whatsapp-widget package in the parent directory for development purposes.
 
-You can run `yarn install` and then `yarn start` to test your package.
+You can run `npm install` and then `npm start` to test your package.

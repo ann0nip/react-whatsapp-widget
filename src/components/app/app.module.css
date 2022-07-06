@@ -1,0 +1,45 @@
+.root {
+    width: 360px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    transform: translate3d(0px, 0px, 0px);
+    touch-action: auto;
+    display: none;
+    position: fixed;
+    bottom: 110px;
+    right: 25px;
+}
+
+.open {
+    display: flex;
+    animation: customTransition 250ms ease-in-out both;
+}
+
+.close {
+    display: none;
+}
+
+@keyframes customTransition {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (max-width: 480px) {
+    .root {
+        bottom: 85px;
+        width: 270px;
+    }
+}
