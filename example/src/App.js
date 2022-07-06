@@ -7,8 +7,6 @@ import 'react-whatsapp-widget/dist/index.css';
 const App = () => {
     return (
         <WhatsAppWidget
-            CompanyIcon={CompanyIcon}
-            companyName="Ann0nIT"
             message={`Hello! 👋🏼 \n\nWhat can we do for you?`}
             phoneNumber=""
         />

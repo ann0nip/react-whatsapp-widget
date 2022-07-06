@@ -1,4 +1,4 @@
-import React, { useContext, Fragment } from 'react';
+import React, { useContext, Fragment, useEffect } from 'react';
 
 import { ChatContext } from '../../contexts/chat.context';
 import ChatBox from '../chat-box/chat-box.component';
@@ -8,7 +8,12 @@ import WaButton from '../wa-button/wa-button.component';
 import styles from './app.module.css';
 
 const App = (props) => {
-    const { isChatOpen } = useContext(ChatContext);
+    const { isChatOpen, setIsChatOpen } = useContext(ChatContext);
+    useEffect(() => {
+        if (props.open) {
+            setIsChatOpen(true);
+        }
+    }, []);
 
     return (
         <Fragment>
