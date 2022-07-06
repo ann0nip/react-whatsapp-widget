@@ -10,7 +10,7 @@ const App = () => {
             CompanyIcon={CompanyIcon}
             companyName="Ann0nIT"
             message={`Hello! 👋🏼 \n\nWhat can we do for you?`}
-            phoneNumber="3704568045"
+            phoneNumber=""
         />
     );
 };
