@@ -52,7 +52,8 @@ Example: `541112222222` where 54 is the Argentina internacional code.
 | companyName   | `string`    | `'Support'`                               | Your company name                                                                                            |
 | replyTimeText | `string`    | `'Typically replies within a day'`        |
 | message       | `string`    | `'Hello! 👋🏼 \n\nWhat can we do for you?'` | With `\n` you can create a break-line.                                                                       |
-| sendButton    | `string`    | `'Send'`                                  | Text inside the send button                                                                                  |
+| sendButtonText    | `string`    | `'Send'`                                  | Text inside the send button        
+| inputPlaceHolder    | `string`    | `'Type a message'`                                  | Placeholder text of the message input        |
 | open          | `boolean`   | `false`                                   | If **true** the chatbox will be open as default                                                              |
 
 ## Contributing
