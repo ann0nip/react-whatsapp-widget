@@ -7,7 +7,6 @@ import WaButton from '../wa-button/wa-button.component';
 import styles from './app.module.css';
 
 const App = (props) => {
-    console.log("🚀 ~ file: app.component.jsx:10 ~ App ~ props:", props)
     const { isChatOpen, setIsChatOpen } = useContext(ChatContext);
     useEffect(() => {
         if (props.open) {
