@@ -55,6 +55,7 @@ Example: `541112222222` where 54 is the Argentina internacional code.
 | sendButtonText    | `string`    | `'Send'`                                  | Text inside the send button        
 | inputPlaceHolder    | `string`    | `'Type a message'`                                  | Placeholder text of the message input        |
 | open          | `boolean`   | `false`                                   | If **true** the chatbox will be open as default                                                              |
+| position          | `right or left`   | `right`                         |
 
 ## Contributing
 
