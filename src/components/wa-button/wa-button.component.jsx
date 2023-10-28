@@ -3,7 +3,13 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { ChatContext } from '../../contexts/chat.context';
 import styles from './wa-button.module.css';
 
-const WaButton = () => {
+const defaultProps = {
+    position: 'right',
+};
+
+const WaButton = ({
+    position = defaultProps.position
+}) => {
     const { isChatOpen, setIsChatOpen } = useContext(ChatContext);
 
     const handleOpen = () => {
@@ -11,7 +17,7 @@ const WaButton = () => {
     };
 
     return (
-        <div className={styles.root} onClick={handleOpen}>
+        <div className={`${styles.root}  ${position === 'left' ? styles.positionLeft : styles.positionRight} ` } onClick={handleOpen}>
             <FaWhatsapp />
         </div>
     );

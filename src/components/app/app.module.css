@@ -8,9 +8,17 @@
     transform: translate3d(0px, 0px, 0px);
     touch-action: auto;
     display: none;
-    position: fixed;
     bottom: 110px;
+    position: fixed;
+   
+}
+
+.positionRight{
     right: 25px;
+}
+
+.positionLeft{
+    left: 25px;
 }
 
 .open {

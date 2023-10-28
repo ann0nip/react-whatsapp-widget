@@ -1,5 +1,4 @@
 import React, { useContext, Fragment, useEffect } from 'react';
-
 import { ChatContext } from '../../contexts/chat.context';
 import ChatBox from '../chat-box/chat-box.component';
 import Header from '../header/header.component';
@@ -20,13 +19,14 @@ const App = (props) => {
             <div
                 className={`${styles.root} ${
                     isChatOpen ? styles.open : styles.close
-                }`}
+                } ${props.position === 'left' ? styles.positionLeft : styles.positionRight} ` }
             >
+
                 <Header {...props} />
                 <ChatBox {...props} />
                 <SendButton {...props} />
             </div>
-            <WaButton />
+            <WaButton {...props} />
         </Fragment>
     );
 };
