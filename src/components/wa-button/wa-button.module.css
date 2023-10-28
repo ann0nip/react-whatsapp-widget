@@ -17,9 +17,16 @@
   -webkit-box-pack: center;
   position: fixed;
   bottom: 25px;
-  right: 25px;
   transition: 0.2s ease;
 
+}
+
+.positionRight{
+  right: 25px;
+}
+
+.positionLeft{
+  left: 25px;
 }
 
 .root:hover {
